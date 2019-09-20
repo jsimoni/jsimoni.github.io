@@ -89,7 +89,7 @@ span.teamname {
 //https://raw.githubusercontent.com/jsimoni/scrape-security-innovation-scoreboard/master/current_score.json
 //file:///C:/Users/jsimoni/github/security-aws-scripts/python-scripts/current_score.json
 
-  $.getJSON('https://raw.githubusercontent.com/jsimoni/scrape-security-innovation-scoreboard/master/current_score.json', function drawTable (data) {
+  $.getJSON('current_score.json', function drawTable (data) {
     console.log(data);
 
     var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
