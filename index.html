@@ -6,14 +6,17 @@
 <h1 align=center>Hackerthon Leaderboard</h1>
 <table id="TeamsTable" border=0  align=center>
   <tr class="TeamsTable">
-    <td width=20%>
-      <span class="teamname">ContentR&D</span><br/><span class="teammembers">Cody M(remote), Harsh B(phl), Wei S(ext)</span><p/>
-      <span class="teamname">Data Scrubs</span><br/><span class="teammembers">Caden B(slc), Josh B(slc), Mike N(ext), Shantanu S(slc)</span><p/>
-      <span class="teamname">DuckyDeathwish</span><br/><span class="teammembers">James F(chl), Ryan S(chl), Liam H(chl), Daniel R(chl)</span><p/>
-      <span class="teamname">FCA</span><br/><span class="teammembers">Chris C(chl), Fernando F(chl), Andy S(chl)</span><p/>
-      <span class="teamname">iGO Hackers</span><br/><span class="teammembers">Mike K(ext), Mark O(remote), Paul H(remote), Srinivas T(ext)</span><p/>
+    <td width=20% valign=top>
+      <span class="teamname">AFFIRM</span><br/><span class="teammembers">Jay R (ext), Matt M (fll), Swathi G (ext), Wayne E (fll)</span><p/>
+      <span class="teamname">AlphaTrust</span><br/><span class="teammembers">Chris F (dal), Mike V (ext), Rich C (ext)</span><p/>
+      <span class="teamname">ContentR&D</span><br/><span class="teammembers">Cody M (remote), Harsh B (phl), Wei S (ext)</span><p/>
+      <span class="teamname">Data Scrubs</span><br/><span class="teammembers">Caden B (slc), Josh B (slc), Mike N (ext), Shantanu S (slc)</span><p/>
+      <span class="teamname">DuckyDeathwish</span><br/><span class="teammembers">James F (chl), Ryan S (chl), Liam H (chl), Daniel R (chl)</span><p/>
+      <span class="teamname">FCA</span><br/><span class="teammembers">Chris C (chl), Fernando F (chl), Andy S (chl)</span><p/>
+      <span class="teamname">GreyHat</span><br/><span class="teammembers">Craig K (ont), Jason N (slc), Nick P (ont)</span><p/>
+      <span class="teamname">iGO Hackers</span><br/><span class="teammembers">Mike K (ext), Mark O (remote), Paul H (remote), Srinivas T (ext)</span><p/>
     </td>
-    <td>
+    <td valign=top>
 <table id="personDataTable" class="table table-striped table-bordered" align=center>
     <tr>
         <th>Standing</th>
@@ -23,12 +26,15 @@
 
 </table>
 </td>
-<td width=20%>
-  <span class="teamname">Johnny Cache</span><br/><span class="teammembers">Jon H(chl), Kiefer S(chl), Helen C(chl)</span><p/>
-  <span class="teamname">Resonant</span><br/><span class="teammembers">Becky G(pln), Neelima V(pln)</span><p/>
-  <span class="teamname">Savage GumBears</span><br/><span class="teammembers">Emeric Q(bur), Rob V(bur), Curtis F(bur)</span><p/>
-  <span class="teamname">Sweaty Enchiladas</span><br/><span class="teammembers">Chris B(chl), Graham E(chl)</span><p/>
-  <span class="teamname">Triple B Cup</span><br/><span class="teammembers">Craig B(chl), Paul B(chl), Mark B(chl)</span><p/>
+<td width=20% valign=top>
+  <span class="teamname">igofishing</span><br/><span class="teammembers">Russel F (ext), Kyle R (ext), Matt F (ext)</span><p/>
+  <span class="teamname">Johnny Cache</span><br/><span class="teammembers">Jon H (chl), Kiefer S (chl), Helen C (chl)</span><p/>
+  <span class="teamname">Resonant</span><br/><span class="teammembers">Becky G (pln), Neelima V (pln)</span><p/>
+  <span class="teamname">Rocket Surgeons</span><br/><span class="teammembers">Blake C (bur), Mike B (bur)</span><p/>
+  <span class="teamname">Savage GumBears</span><br/><span class="teammembers">Emeric Q (bur), Rob V (bur), Curtis F (bur)</span><p/>
+  <span class="teamname">Sweaty Enchiladas</span><br/><span class="teammembers">Chris B (chl), Graham E (chl)</span><p/>
+  <span class="teamname">Triple B Cup</span><br/><span class="teammembers">Craig B (chl), Paul B (chl), Mark B (chl)</span><p/>
+  <span class="teamname">Zeke Squad</span><br/><span class="teammembers">Dirk V (ext), Greg W (phl), Lou M (ext), Mark M (ext)</span><p/>
 </td>
 </table>
 
@@ -89,7 +95,7 @@ span.teamname {
 //https://raw.githubusercontent.com/jsimoni/scrape-security-innovation-scoreboard/master/current_score.json
 //file:///C:/Users/jsimoni/github/security-aws-scripts/python-scripts/current_score.json
 
-  $.getJSON('current_score.json', function drawTable (data) {
+  $.getJSON('https://raw.githubusercontent.com/jsimoni/scrape-security-innovation-scoreboard/master/current_score.json', function drawTable (data) {
     console.log(data);
 
     var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
